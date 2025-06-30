@@ -1,0 +1,15 @@
+.subckt XOR1 Vdd Vss Out A B
+
+.inc tsmc018.lib
+.lib standard.mos
+
+XU1 A B N001 Vss Vdd NAND1
+XU2 A N001 N002 Vss Vdd NAND1
+XU3 B N001 N003 Vss Vdd NAND1
+XU4 N002 N003 Out Vss Vdd NAND1
+.lib NAND1.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends XOR1

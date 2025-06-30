@@ -1,0 +1,25 @@
+.subckt Val_Plus_A A0 A1 A2 A3 Val_Plus_A[0] Val_Plus_A[1] Val_Plus_A[2] Val_Plus_A[3] Val_Plus_A[4] Val_Plus_A[5] Val_Plus_A[6] Val_Plus_A[7]
+
+.inc tsmc018.lib
+.lib standard.mos
+
+R0 Val_Plus_A[0] A0 1m
+R1 Val_Plus_A[1] A1 1m
+R2 Val_Plus_A[2] A2 1m
+XU1 Vdd 0 A3 N001 NOT1
+XU2 Vdd 0 N001 Val_Plus_A[3] NOT1
+V1 Vdd 0 1.8
+XU3 Vdd 0 A3 N002 NOT1
+XU4 Vdd 0 N002 Val_Plus_A[4] NOT1
+XU5 Vdd 0 A3 N003 NOT1
+XU6 Vdd 0 N003 Val_Plus_A[5] NOT1
+XU7 Vdd 0 A3 N004 NOT1
+XU8 Vdd 0 N004 Val_Plus_A[6] NOT1
+XU9 Vdd 0 A3 N005 NOT1
+XU10 Vdd 0 N005 Val_Plus_A[7] NOT1
+.lib NOT1.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends Val_Plus_A

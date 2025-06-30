@@ -1,0 +1,12 @@
+.subckt Val_Zero Val_Zero[0] Val_Zero[1] Val_Zero[2] Val_Zero[3] Val_Zero[4] Val_Zero[5] Val_Zero[6] Val_Zero[7]
+
+R0 Val_Zero[0] 0 1m
+R1 Val_Zero[1] 0 1m
+R2 Val_Zero[2] 0 1m
+R3 Val_Zero[3] 0 1m
+R4 Val_Zero[4] 0 1m
+R5 Val_Zero[5] 0 1m
+R6 Val_Zero[6] 0 1m
+R7 Val_Zero[7] 0 1m
+
+.ends Val_Zero

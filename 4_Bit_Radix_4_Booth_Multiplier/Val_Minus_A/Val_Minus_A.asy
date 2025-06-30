@@ -1,0 +1,45 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 192 144 -80 -176
+SYMATTR Prefix X
+SYMATTR Value Val_Minus_A
+SYMATTR ModelFile Val_Minus_A.sub
+PIN -80 -64 LEFT 8
+PINATTR PinName A0
+PINATTR SpiceOrder 1
+PIN -80 -32 LEFT 8
+PINATTR PinName A1
+PINATTR SpiceOrder 2
+PIN -80 0 LEFT 8
+PINATTR PinName A2
+PINATTR SpiceOrder 3
+PIN -80 32 LEFT 8
+PINATTR PinName A3
+PINATTR SpiceOrder 4
+PIN 192 -144 RIGHT 8
+PINATTR PinName Cout
+PINATTR SpiceOrder 5
+PIN 192 -112 RIGHT 8
+PINATTR PinName Val_Minus_A[0]
+PINATTR SpiceOrder 6
+PIN 192 -80 RIGHT 8
+PINATTR PinName Val_Minus_A[1]
+PINATTR SpiceOrder 7
+PIN 192 -48 RIGHT 8
+PINATTR PinName Val_Minus_A[2]
+PINATTR SpiceOrder 8
+PIN 192 -16 RIGHT 8
+PINATTR PinName Val_Minus_A[3]
+PINATTR SpiceOrder 9
+PIN 192 16 RIGHT 8
+PINATTR PinName Val_Minus_A[4]
+PINATTR SpiceOrder 10
+PIN 192 48 RIGHT 8
+PINATTR PinName Val_Minus_A[5]
+PINATTR SpiceOrder 11
+PIN 192 80 RIGHT 8
+PINATTR PinName Val_Minus_A[6]
+PINATTR SpiceOrder 12
+PIN 192 112 RIGHT 8
+PINATTR PinName Val_Minus_A[7]
+PINATTR SpiceOrder 13

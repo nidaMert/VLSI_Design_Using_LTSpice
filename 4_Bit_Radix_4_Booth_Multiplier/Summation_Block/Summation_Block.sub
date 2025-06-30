@@ -1,0 +1,12 @@
+.subckt Summation_Block PP0[0] PP0[1] PP0[2] PP0[3] PP0[4] PP0[5] PP0[6] PP0[7] PP1_Shifted[0] PP1_Shifted[1] PP1_Shifted[2] PP1_Shifted[3] PP1_Shifted[4] PP1_Shifted[5] PP1_Shifted[6] PP1_Shifted[7] Cin Cout P[0] P[1] P[2] P[3] P[4] P[5] P[6] P[7]
+
+.inc tsmc018.lib
+.lib standard.mos
+
+X§U1 PP0[0] PP0[1] PP0[2] PP0[3] PP0[4] PP0[5] PP0[6] PP0[7] PP1_Shifted[0] PP1_Shifted[1] PP1_Shifted[2] PP1_Shifted[3] PP1_Shifted[4] PP1_Shifted[5] PP1_Shifted[6] PP1_Shifted[7] Cin Cout P[0] P[1] P[2] P[3] P[4] P[5] P[6] P[7] 8_Bit_CLA
+.lib 8_Bit_CLA.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends Summation_Block

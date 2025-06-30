@@ -1,0 +1,25 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -32 32 -32 -32
+LINE Normal 32 0 -32 32
+LINE Normal -32 -32 32 0
+LINE Normal 0 -16 0 -48
+LINE Normal -32 0 -64 0
+LINE Normal 0 16 0 48
+LINE Normal 42 0 64 0
+CIRCLE Normal 42 5 32 -5
+SYMATTR Prefix X
+SYMATTR Value inverter
+SYMATTR ModelFile inverter.sub
+PIN -64 0 NONE 3
+PINATTR PinName VIN
+PINATTR SpiceOrder 1
+PIN 64 0 NONE 3
+PINATTR PinName VOUT
+PINATTR SpiceOrder 2
+PIN 0 -48 NONE 4
+PINATTR PinName VDD
+PINATTR SpiceOrder 3
+PIN 0 48 NONE 4
+PINATTR PinName VSS
+PINATTR SpiceOrder 4

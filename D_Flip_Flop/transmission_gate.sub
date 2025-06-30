@@ -1,0 +1,12 @@
+.subckt transmission_gate V1 V2 _VC VC
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M1 V1 VC V2 0 CMOSN l=0.18u w=1u
+M2 V2 _VC V1 VDD CMOSP l=0.18u w=2u
+V1 VDD 0 1.8
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends transmission_gate

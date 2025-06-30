@@ -1,0 +1,11 @@
+.subckt inverter VIN VOUT VDD VSS
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M2 VOUT VIN VSS VSS CMOSN l=0.18u w=1u
+M1 VDD VIN VOUT VDD CMOSP l=0.18u w=2u
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends inverter

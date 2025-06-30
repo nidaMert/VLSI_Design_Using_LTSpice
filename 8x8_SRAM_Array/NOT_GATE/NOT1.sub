@@ -1,0 +1,12 @@
+.subckt NOT1 Vdd Vss A Out
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M§PMODA Vdd A Out Vdd CMOSP l=1u w=2u
+M§NMODB Out A Vss Vss CMOSN l=1u w=1u
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends NOT1

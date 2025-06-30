@@ -1,0 +1,16 @@
+.subckt Sense_Amplifier SE SE_bar VDD Bit/Vout Bit_bar/_Vout VSS
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M1 N001 Bit_bar/_Vout Bit/Vout VDD CMOSP l=0.5u w=2u
+M2 Bit/Vout Bit_bar/_Vout N002 VSS CMOSN l=0.5u w=1u
+M3 N001 Bit/Vout Bit_bar/_Vout VDD CMOSP l=0.5u w=2u
+M4 Bit_bar/_Vout Bit/Vout N002 VSS CMOSN l=0.5u w=1u
+M5 VDD SE_bar N001 VDD CMOSP l=0.5u w=1u
+M6 N002 SE VSS VSS CMOSN l=0.5u w=3u
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends Sense_Amplifier

@@ -1,0 +1,22 @@
+.subckt 2_Bit_CLA A0 A1 B0 B1 Cin Cout S1 S0 Vdd Vss
+
+.inc tsmc018.lib
+.lib standard.mos
+
+XU1 A0 B0 P0 G0 Vdd 0 PG_Generator
+XU2 A1 B1 P1 G1 Vdd 0 PG_Generator
+XU3 Vdd 0 P0 Cin P0.Cin AND1
+XU4 Vdd 0 C1 P0.Cin G0 OR1
+XU5 Vdd 0 P1 C1 P1.C1 AND1
+XU6 Vdd 0 Cout P1.C1 G1 OR1
+XU7 Vdd 0 S0 P0 Cin XOR1
+XU8 Vdd 0 S1 P1 C1 XOR1
+.lib AND1.sub
+.lib OR1.sub
+.lib PG_Generator.sub
+.lib XOR1.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends 2_Bit_CLA

@@ -1,0 +1,36 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -80 -16 -64 -16
+LINE Normal -80 16 -64 16
+LINE Normal 0 -64 0 -48
+LINE Normal 80 -16 64 -16
+LINE Normal 80 16 64 16
+LINE Normal 0 64 0 48
+RECTANGLE Normal 64 48 -64 -48
+TEXT -59 -16 Left 2 A
+TEXT -59 16 Left 2 B
+TEXT 46 -16 Left 2 P
+TEXT 45 16 Left 2 G
+TEXT -22 -36 Left 2 Vdd
+TEXT -17 34 Left 2 Vss
+SYMATTR Prefix X
+SYMATTR Value PG_Generator
+SYMATTR ModelFile PG_Generator.sub
+PIN -80 -16 NONE 8
+PINATTR PinName A
+PINATTR SpiceOrder 1
+PIN -80 16 NONE 8
+PINATTR PinName B
+PINATTR SpiceOrder 2
+PIN 80 -16 NONE 8
+PINATTR PinName P
+PINATTR SpiceOrder 3
+PIN 80 16 NONE 8
+PINATTR PinName G
+PINATTR SpiceOrder 4
+PIN 0 -64 NONE 8
+PINATTR PinName Vdd
+PINATTR SpiceOrder 5
+PIN 0 64 NONE 8
+PINATTR PinName Vss
+PINATTR SpiceOrder 6

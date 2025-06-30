@@ -1,0 +1,24 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 128 240 -80 -48
+SYMATTR Prefix X
+SYMATTR Value Sense_Amplifier
+SYMATTR ModelFile Sense_Amplifier.sub
+PIN -16 -48 VRIGHT 8
+PINATTR PinName SE
+PINATTR SpiceOrder 1
+PIN 16 -48 VRIGHT 8
+PINATTR PinName SE_bar
+PINATTR SpiceOrder 2
+PIN 48 -48 VRIGHT 8
+PINATTR PinName VDD
+PINATTR SpiceOrder 3
+PIN -80 80 LEFT 8
+PINATTR PinName Bit/Vout
+PINATTR SpiceOrder 4
+PIN 128 112 RIGHT 8
+PINATTR PinName Bit_bar/_Vout
+PINATTR SpiceOrder 5
+PIN 16 240 VLEFT 8
+PINATTR PinName VSS
+PINATTR SpiceOrder 6

@@ -1,0 +1,22 @@
+.subckt 1-bit_6T_SRAM_Cell Data Write PC VDD Data_bar Word VSS Bit/Vout Q Bit_bar/_Vout
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M1 Bit/Vout Write Data VSS CMOSN l=0.5u w=3u
+M2 Q Word Bit/Vout VSS CMOSN l=0.3u w=0.6u
+C1 Bit/Vout VSS 100f
+M3 VDD PC Bit/Vout VDD CMOSP l=0.5u w=2u
+M4 VDD Q_bar Q VDD CMOSP l=0.3u w=0.39u
+M5 Q Q_bar VSS VSS CMOSN l=0.3u w=1.5u
+M6 VDD Q Q_bar VDD CMOSP l=0.3u w=0.39u
+M7 Q_bar Q VSS VSS CMOSN l=0.3u w=1.5u
+M8 Bit_bar/_Vout Write Data_bar VSS CMOSN l=0.5u w=3u
+M9 Q_bar Word Bit_bar/_Vout VSS CMOSN l=0.3u w=0.6u
+C2 Bit_bar/_Vout VSS 100f
+M10 VDD PC Bit_bar/_Vout VDD CMOSP l=0.5u w=2u
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends 1-bit_6T_SRAM_Cell

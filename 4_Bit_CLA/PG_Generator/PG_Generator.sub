@@ -1,0 +1,14 @@
+.subckt PG_Generator A B P G Vdd Vss
+
+.inc tsmc018.lib
+.lib standard.mos
+
+XU1 Vdd Vss P A B XOR1
+XU2 Vdd Vss A B G AND1
+.lib AND1.sub
+.lib XOR1.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends PG_Generator

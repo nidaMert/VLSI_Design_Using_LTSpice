@@ -1,0 +1,30 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 16 192 -160 -96
+SYMATTR Prefix X
+SYMATTR Value Val_Zero
+SYMATTR ModelFile Val_Zero.sub
+PIN 16 -64 RIGHT 8
+PINATTR PinName Val_Zero[0]
+PINATTR SpiceOrder 1
+PIN 16 -32 RIGHT 8
+PINATTR PinName Val_Zero[1]
+PINATTR SpiceOrder 2
+PIN 16 0 RIGHT 8
+PINATTR PinName Val_Zero[2]
+PINATTR SpiceOrder 3
+PIN 16 32 RIGHT 8
+PINATTR PinName Val_Zero[3]
+PINATTR SpiceOrder 4
+PIN 16 64 RIGHT 8
+PINATTR PinName Val_Zero[4]
+PINATTR SpiceOrder 5
+PIN 16 96 RIGHT 8
+PINATTR PinName Val_Zero[5]
+PINATTR SpiceOrder 6
+PIN 16 128 RIGHT 8
+PINATTR PinName Val_Zero[6]
+PINATTR SpiceOrder 7
+PIN 16 160 RIGHT 8
+PINATTR PinName Val_Zero[7]
+PINATTR SpiceOrder 8

@@ -1,0 +1,14 @@
+.subckt NAND1 A B Out Vss Vdd
+
+.inc tsmc018.lib
+.lib standard.mos
+
+M§PMODA Vdd A Out Vdd CMOSP l=1u w=2u
+M§PMODB Vdd B Out Vdd CMOSP l=1u w=2u
+M§NMODA Out A N001 Vss CMOSN l=1u w=1u
+M§NMODB N001 B Vss Vss CMOSN l=1u w=1u
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends NAND1

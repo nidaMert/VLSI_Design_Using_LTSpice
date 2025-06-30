@@ -1,0 +1,27 @@
+.subckt Val_Minus_2A A0 A1 A2 A3 Cout Val_Minus_2A[0] Val_Minus_2A[1] Val_Minus_2A[2] Val_Minus_2A[3] Val_Minus_2A[4] Val_Minus_2A[5] Val_Minus_2A[6] Val_Minus_2A[7]
+
+.inc tsmc018.lib
+.lib standard.mos
+
+XU1 A0 A1 A2 A3 Val_Plus_2A[0] Val_Plus_2A[1] Val_Plus_2A[2] Val_Plus_2A[3] Val_Plus_2A[4] Val_Plus_2A[5] Val_Plus_2A[6] Val_Plus_2A[7] Val_Plus_2A
+XU2 B0 B1 B2 B3 B4 B5 B6 B7 Val_Zero
+V1 Vdd 0 1.8
+V2 Cin 0 1.8
+XU3 Vdd 0 Val_Plus_2A[0] Inv_2A[0] NOT1
+XU4 Vdd 0 Val_Plus_2A[1] Inv_2A[1] NOT1
+XU5 Vdd 0 Val_Plus_2A[2] Inv_2A[2] NOT1
+XU6 Vdd 0 Val_Plus_2A[3] Inv_2A[3] NOT1
+XU7 Vdd 0 Val_Plus_2A[4] Inv_2A[4] NOT1
+XU8 Vdd 0 Val_Plus_2A[5] Inv_2A[5] NOT1
+XU9 Vdd 0 Val_Plus_2A[6] Inv_2A[6] NOT1
+XU10 Vdd 0 Val_Plus_2A[7] Inv_2A[7] NOT1
+XU11 Inv_2A[0] Inv_2A[1] Inv_2A[2] Inv_2A[3] Inv_2A[4] Inv_2A[5] Inv_2A[6] Inv_2A[7] B0 B1 B2 B3 B4 B5 B6 B7 Cin Cout Val_Minus_2A[0] Val_Minus_2A[1] Val_Minus_2A[2] Val_Minus_2A[3] Val_Minus_2A[4] Val_Minus_2A[5] Val_Minus_2A[6] Val_Minus_2A[7] 8_Bit_CLA
+.lib 8_Bit_CLA.sub
+.lib NOT1.sub
+.lib Val_Plus_2A.sub
+.lib Val_Zero.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends Val_Minus_2A

@@ -1,0 +1,56 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -80 -64 -96 -64
+LINE Normal -80 -32 -96 -32
+LINE Normal -80 0 -96 0
+LINE Normal -80 32 -96 32
+LINE Normal -80 64 -96 64
+LINE Normal 96 -48 80 -48
+LINE Normal 96 0 80 0
+LINE Normal 96 48 80 48
+LINE Normal 0 -96 0 -88
+LINE Normal 0 96 0 88
+RECTANGLE Normal 80 88 -80 -88
+TEXT -78 -64 Left 2 A0
+TEXT -78 -32 Left 2 A1
+TEXT -78 0 Left 2 B0
+TEXT -78 32 Left 2 B1
+TEXT -78 64 Left 2 Cin
+TEXT 78 -48 Right 2 Cout
+TEXT 78 0 Right 2 S1
+TEXT 78 48 Right 2 S0
+TEXT 0 -88 Top 2 Vdd
+TEXT 0 88 Bottom 2 Vss
+SYMATTR Prefix X
+SYMATTR Value 2_Bit_CLA
+SYMATTR ModelFile 2_Bit_CLA.sub
+PIN -96 -64 NONE 20
+PINATTR PinName A0
+PINATTR SpiceOrder 1
+PIN -96 -32 NONE 20
+PINATTR PinName A1
+PINATTR SpiceOrder 2
+PIN -96 0 NONE 20
+PINATTR PinName B0
+PINATTR SpiceOrder 3
+PIN -96 32 NONE 20
+PINATTR PinName B1
+PINATTR SpiceOrder 4
+PIN -96 64 NONE 20
+PINATTR PinName Cin
+PINATTR SpiceOrder 5
+PIN 96 -48 NONE 8
+PINATTR PinName Cout
+PINATTR SpiceOrder 6
+PIN 96 0 NONE 8
+PINATTR PinName S1
+PINATTR SpiceOrder 7
+PIN 96 48 NONE 8
+PINATTR PinName S0
+PINATTR SpiceOrder 8
+PIN 0 -96 NONE 8
+PINATTR PinName Vdd
+PINATTR SpiceOrder 9
+PIN 0 96 NONE 8
+PINATTR PinName Vss
+PINATTR SpiceOrder 10

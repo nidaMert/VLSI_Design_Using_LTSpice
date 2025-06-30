@@ -1,0 +1,16 @@
+.subckt 8_Bit_CLA A0 A1 A2 A3 A4 A5 A6 A7 B0 B1 B2 B3 B4 B5 B6 B7 Cin Cout S0 S1 S2 S3 S4 S5 S6 S7
+
+.inc tsmc018.lib
+.lib standard.mos
+
+XU1 A0 A1 B0 B1 Cin N001 S1 S0 Vdd 0 2_Bit_CLA
+XU2 A2 A3 B2 B3 N001 N002 S3 S2 Vdd 0 2_Bit_CLA
+XU3 A4 A5 B4 B5 N002 N003 S5 S4 Vdd 0 2_Bit_CLA
+XU4 A6 A7 B6 B7 N003 Cout S7 S6 Vdd 0 2_Bit_CLA
+V1 Vdd 0 1.8
+.lib 2_Bit_CLA.sub
+
+.model NMOS NMOS
+.model PMOS PMOS
+
+.ends 8_Bit_CLA
